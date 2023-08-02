@@ -14,10 +14,32 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    return view('home');
+});
+
+Route::get('/greggio', function () {
     $data = [
         'name' => 'Ezio',
         'surname' => 'Greggio',
         'age' => 69
     ];
-    return view('home', $data);
+    return view('people.greggio', $data);
+});
+
+Route::get('/iacchetti', function () {
+    $data = [
+        'name' => 'Enzo',
+        'surname' => 'Iacchetti',
+        'age' => 70
+    ];
+    return view('people.iacchetti', $data);
+});
+
+Route::get('/scotti', function () {
+    $data = [
+        'name' => 'Gerry',
+        'surname' => 'Scotti',
+        'age' => 66
+    ];
+    return view('people.scotti', $data);
 });

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Ezio Greggio</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
         </nav>
     </header>
 
-    <p>Home</p>
+    <p>{{ $name }} {{ $surname }}, {{ $age }} anni</p>
 
 </body>
 
